@@ -1,0 +1,9 @@
+import personas.*
+import spa.*
+
+test "Ramiro" {
+	assert.equals(100, ramiro.nivelContractura())
+	spa.atender(ramiro)
+	assert.notThat(ramiro.pielGrasosa())
+	assert.equals(98, ramiro.nivelContractura())
+}
